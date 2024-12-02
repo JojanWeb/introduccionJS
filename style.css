@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.lista{
+    background-color: #a4a4a4;
+    width: 50%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.lista__item{
+    text-decoration: none;
+}
