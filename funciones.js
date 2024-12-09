@@ -9,6 +9,23 @@ export const pedirDato = (mensaje, tipo) => {
 
 export const calcularPromedio = (sumaTotal, total) => sumaTotal / total;
 
+export const multiplicar = (a, b) => a * b;
+export const dividir = (a, b) => a / b;
+
+export const mayorDeTres = (a,b,c) => {
+  if (a > b && a > c) {
+      return a;
+  }else if (b > c && b > a) {
+      return b;
+  }else if (c > b && c > a) {
+      return c;
+  }else{
+      return false;
+  }
+}
+
+export const areaTriangulo = (base, altura) => (base * altura) / 2;
+export const areaCirculo = (radio) => Math.PI * radio**2;
 // 2. escribir un programa que almacene la cadena de caracteres contraseña de una variable,
 // pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida
 // por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y
