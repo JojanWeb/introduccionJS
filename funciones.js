@@ -1,15 +1,13 @@
-export const esMayor = (edad) => {
-    if (edad > 0) {
-        if (edad >= 18) {
-            return true;
-        } else {
-            return false;
-        }
-    }else{
-        let mensaje = "Edad invalida";
-        return mensaje;
-    }
-}
+export const pedirDato = (mensaje, tipo) => {
+  if (tipo === "int") {
+    return parseInt(prompt(mensaje));
+  } else if (tipo === "float") {
+    return parseFloat(prompt(mensaje));
+  }
+  return prompt(mensaje);
+};
+
+export const calcularPromedio = (sumaTotal, total) => sumaTotal / total;
 
 // 2. escribir un programa que almacene la cadena de caracteres contraseña de una variable,
 // pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida
