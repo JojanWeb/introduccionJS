@@ -3,5 +3,21 @@
 
 import { pedirDato } from "../funciones.js";
 
-const numero = pedirDato(`Ingrese el numero: `,"int");
+const cuentaRegresiva = (numero) => {
+  let cuentaAtras = [];
+  while (true) {
+    if (numero > 0) {
+      for (let i = numero; i >= 0; i--) {
+        cuentaAtras.push(i);
+      }
+      return cuentaAtras;
+    } else {
+      alert("INGRESE UN NUMERO ENTERO POSITIVO;");
+    }
+  }
+};
 
+const numero = pedirDato(`Ingrese el numero: `, "int");
+const array = cuentaRegresiva(numero);
+alert(`CUENTA REGRESIVA: 
+  ${array.join(" ,")}`);
