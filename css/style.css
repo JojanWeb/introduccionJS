@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(#000000a9, #000000a9), url(image.png);
+  background-image: linear-gradient(#000000a9, #000000a9), url(../img/image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
